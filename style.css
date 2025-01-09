@@ -1,150 +1,255 @@
-*, *:before, *:after {
-  box-sizing: border-box;
-}
-
-html {
-  font-size: 18px;
-  line-height: 1.5;
-  font-weight: 300;
-  color: #000000;
-  font-family: "Nunito Sans", sans-serif;
-  
-}
-
-
 body {
-  margin: 0;
-  padding: 0;
-  height: 100vh;
-  background-color: #242306;
-  background-attachment: relative;
+    font-family :'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    padding: 0px;
+   
+}
+ 
+ h2 {
+     color: #000000;
+     text-align: justify;
+     margin-top: 0px;
+     font-size: 15px;
+     font-style: italic;
+
+}
+h3{
+   color: #333333;
+   text-align: center;
+   font-size: 11px;
+   margin-top: 0px;
+   display: flex; 
+
 }
 
-
-.content {
-  display: flex;
-  margin: 0 auto;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  max-width: 1000px;
+h4 {
+   color: #333333;;
+   text-align: center;
+   font-size: relative;
+   margin-top: 0px;
 }
 
-.heading {
-  width: 100%;
-  margin-left: 3rem;
-  font-weight: 900;
-  font-size: 3.618rem;
-  text-transform: uppercase;
-  letter-spacing: 0.1ch;
-  line-height: 1;
-  padding-bottom: 0.5em;
-  margin-bottom: 1rem;
-  position: relative;
-  color: #fff;
-}
-.heading:after {
-  display: block;
-  content: "";
-  position: absolute;
-  width: 60px;
-  height: 4px;
-  background: linear-gradient(135deg, #ffffff, #ffffff);
-  bottom: 0;
-}
-
-.description {
-  width: 100%;
-  margin-top: 0;
-  margin-left: 3rem;
-  margin-bottom: 3rem;
-  color: #dbd81b;
-}
-
-.card {
-  color: inherit;
-  cursor: pointer;
-  width: calc(80% - 2rem);
-  min-width: calc(33% - 2rem);
-  height: 400px;
-  min-height: 400px;
-  perspective: 1000px;
-  margin: 1rem;
-  position: relative;
-  display: flex;
-}
-@media screen and (max-width: 800px) {
-  .card {
-    width: calc(50% - 2rem);
+/* unvisited link */
+h3 a:link {
+   color: rgb(0, 0, 0);
+   padding: 50px;
+ }
+ 
+ /* visited link */
+ h3 a:visited {
+   color: #000000;
+ }
+ 
+ /* mouse over link */
+ h3 a:hover {
+   font-weight: bold;
+   color: #E1F4F3;
+   letter-spacing: 5px;
+   transition: all 1s;
+ }
+ 
+ /* selected link */
+ h3 a:active {
+   color: rgb(255, 255, 255);
+ }
+ 
+ nav a:hover {
+   font-weight: bold;
+    color: #E1F4F3;
+    letter-spacing: 8px;
+    transition: all 1.5s;
+    
   }
-}
-@media screen and (max-width: 500px) {
-  .card {
-    width: 100%;
+ 
+   h1:hover{
+   
+   letter-spacing: 30px;
+   transition: all 1.5s;
   }
+  h2:hover{
+   font-weight: bold;
+   letter-spacing: 5px;
+   transition: all 1s;
+ 
+  }
+
+  h4:hover{
+   font-weight: bold;
+   letter-spacing: 5px;
+   transition: all 1s;
+ 
+  }
+
+ footer {
+ 
+    padding: 20px;
+    color: rgb(255, 255, 255);
+    background-color: #333333;
+    text-align: center;
+    
+  }
+ 
+ .profile img {
+     width: 200px;
+     height: auto;
+    
+     float: center;
+     padding: 10px;
+ 
+ }
+ .card {
+    box-shadow: 0 12px 18px 0 #585c61;
+    border-radius: 5px;
+    padding: 100px;
+    margin-top: 50px;
+    box-sizing: border-box;
+    
+ }
+
+ .cardi {
+   box-shadow: 0 6px 10px 0 #585c61;
+   border-radius: 5px;
+   padding: 40px;
+   margin-top: 20px;
+   
 }
 
-.front,
-.back {
-  display: flex;
-  border-radius: 6px;
-  background-position: center;
-  background-size: cover;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  transform-style: preserve-3d;
-  transition: ease-in-out 1000ms;
-}
+ .jumbotron {
+    font-size: 10px;
+    padding: 250px;
+    background-color: #727171;
+    text-align: center;
+    -moz-text-size-adjust: auto;
+    color: #000000;
+    letter-spacing: 20px;
+    font-style: italic;
+    
 
-.front {
-  background-size: cover;
-  padding: 2rem;
-  font-size: 1.618rem;
-  font-weight: 600;
-  color: #ffffff;
-  overflow: hidden;
-  font-family: Poppins, sans-serif;
-}
-.front:before {
-  position: absolute;
-  display: block;
-  content: "";
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: linear-gradient(135deg, #ffffff, #e6ff08);
-  opacity: 0.25;
-  z-index: -1;
-}
-.card:hover .front {
-  transform: rotateY(180deg);
-}
-.card:nth-child(even):hover .front {
-  transform: rotateY(-180deg);
-}
-
-.back {
-  background: #ffffff;
-  transform: rotateY(-180deg);
-  padding: 0 2em;
-}
+ }
+ nav a {
+    font-size: 15px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    letter-spacing: 1px;
+    font-style: italic;
+    padding-left: 50px;
+    
+ }
+ nav li {
+    display: inline;
+    position: relative;
+    
+ }
 
 
-.card:hover .back {
-  transform: rotateY(0deg);
-}
-.card:nth-child(even) .back {
-  transform: rotateY(180deg);
+ nav {
+    background-color: #000000;
+    padding: 30px;
+    text-align: justify;
+    word-spacing: 10px;
+ }
+
+ #content {
+    float: left;
+    width: 75%;
+  }
+ 
+  aside {
+    float: right;
+    width: 25%;
+    padding-left : 20px;
+    text-align: left;
+    
+    
+  }
+  
+  *{
+     box-sizing: border-box;
+  }
+ 
+  main {
+    padding: 10px;
+    overflow: auto;
+    background-color: #ffffff;
+    
+  }
+ 
+  @media screen and (max-width: 1000px) {
+    #content,
+    aside,img,h2 {
+        width: 100%;
+        padding: 0;
+        position: center;
+        font-size: medium;
+    }
+ }
+ @media screen and (max-width: 1000px) {
+   .texti {
+      font-size: 45px;
+   }
 }
 
-.card:nth-child(even):hover .back {
-  transform: rotateY(0deg);
+.container {
+ margin :10px auto;
+ width :50%;
+ padding : 0px;
+ line-height: 2em;
 }
+.containeri {
+   width: 500px;
+ position: relative; 
+     }
+img {
+   float :left;
+   width :200px;
+   height :auto;
+   padding: 0 10px 0 0;
+
+}
+
+.texti {
+   text-align: center;
+   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   padding-bottom: 20px;
+   color :#ffffff
+ 
+}
+
+.texti:active{
+   text-align: center;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   padding-bottom: 20px;
+   color :#000000;
+   letter-spacing: 5px;
+   transition: all 1s;
+ 
+}
+.texti:hover{
+   text-align: center;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   padding-bottom: 20px;
+   color :#000000;
+   letter-spacing: 8px;
+   transition: all 1s;
+ 
+}
+
+.texti:visited{
+   text-align: center;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   padding-bottom: 20px;
+   color :#000000;
+   letter-spacing: 5px;
+   transition: all 1s;
+ 
+}
+
+
+
+
+section{
+   line-height: 2em;
+}
+
 
